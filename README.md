@@ -12,7 +12,7 @@ This is a simple Node.js demo application designed to showcase the basic structu
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/nodejs-demo-app.git
+   git clone https://github.com/sandyzayn/nodejs-demo-app.git
    ```
 2. Navigate to the project directory:
    ```

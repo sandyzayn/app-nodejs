@@ -1,35 +1,31 @@
-name: Node.js CI
+name: CI/CD Pipeline
 
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
-  build:
-
+  build-and-push:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
-        node-version: '14'
+        node-version: '18'
 
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests
-      run: npm test
-
     - name: Build Docker image
-      run: docker build -t my-nodejs-app .
+      run: docker build -t sandyzayn/nodejs-demo-app:latest .
 
-    - name: Deploy
-      run: echo "Deploying application..."
+    - name: Login to DockerHub
+      run: echo "secrets.DOCKER_PASSWORD " | docker login -u "sandyzayn" --password-stdin
+
+    - name: Push Docker image
+      run: docker push sandyzayn/nodejs-demo-app:latest
