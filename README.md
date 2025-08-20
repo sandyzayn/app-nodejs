@@ -32,8 +32,7 @@ It performs the following steps:
 2. **Install Dependencies**
 3. **Run Tests**
 4. **Build Docker Image**
-5. **Push Docker Image to Docker Hub**
-6. **(Optional) Deploy**
+5. **(Optional) Deploy**
 
 ---
 
@@ -117,19 +116,19 @@ jobs:
 
 ## 📸 Screenshots
 
-### 1️⃣ Pipeline Success & Steps
+
 <img width="1914" height="914" alt="Image" src="https://github.com/user-attachments/assets/d00833f6-1525-4cd0-9ec7-cbd2e77f114c" />
 
-### 2️⃣ Build & Push Docker Image
+
 <img width="1880" height="954" alt="Image" src="https://github.com/user-attachments/assets/5f3758aa-c6ff-4186-af3e-903a9c9ee450" />
 
-### 3️⃣ DockerHub Image Upload
+
 <img width="1880" height="974" alt="Image" src="https://github.com/user-attachments/assets/ec8d30c5-8707-4e8c-8df3-49442f1b33ed" />
 
-### 4️⃣ Test Execution
+
 <img width="1919" height="968" alt="Image" src="https://github.com/user-attachments/assets/5b840b40-35a7-4076-9afe-663a084aa6c9" />
 
-### 5️⃣ Final Pipeline Overview
+
 <img width="1919" height="914" alt="Image" src="https://github.com/user-attachments/assets/859fbaa7-ef9c-499e-9742-3ba755871eb9" />
 
 ---
